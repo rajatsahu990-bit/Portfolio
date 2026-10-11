@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#2f2e41" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="laptopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#262626" />
+      <stop offset="100%" stop-color="#141414" />
+    </linearGradient>
+    <linearGradient id="redAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="300" cy="250" r="180" fill="url(#bgGrad)" />
+  <circle cx="320" cy="220" r="100" fill="#ef4444" opacity="0.1" filter="url(#glow)" />
+
+  <!-- Background Floating Tech Elements -->
+  <g opacity="0.4">
+    <!-- Code Bracket Left -->
+    <text x="110" y="160" fill="#ef4444" font-family="monospace" font-size="32" font-weight="bold">&lt;/&gt;</text>
+    <!-- Curly Braces -->
+    <text x="450" y="140" fill="#ef4444" font-family="monospace" font-size="36" font-weight="bold">{ ; }</text>
+    <!-- Terminal prompt -->
+    <rect x="70" y="240" width="100" height="48" rx="8" fill="#1f1f1f" stroke="#333" stroke-width="1.5" />
+    <circle cx="85" cy="252" r="3" fill="#ef4444" />
+    <circle cx="95" cy="252" r="3" fill="#eab308" />
+    <circle cx="105" cy="252" r="3" fill="#22c55e" />
+    <text x="85" y="274" fill="#ef4444" font-family="monospace" font-size="11">$ ship</text>
+
+    <!-- Cloud / Edge Node -->
+    <rect x="440" y="260" width="110" height="52" rx="8" fill="#1f1f1f" stroke="#333" stroke-width="1.5" />
+    <text x="455" y="284" fill="#a3a3a3" font-family="monospace" font-size="10">STATUS: 200</text>
+    <text x="455" y="300" fill="#22c55e" font-family="monospace" font-size="11">● LIVE AT EDGE</text>
+  </g>
+
+  <!-- Desk Surface -->
+  <rect x="100" y="380" width="400" height="12" rx="6" fill="#222222" />
+  <rect x="140" y="392" width="320" height="4" fill="#181818" />
+
+  <!-- Person Body & Clothes -->
+  <!-- Torso / Hoodie -->
+  <path d="M 230 420 L 230 330 C 230 300, 260 285, 300 285 C 340 285, 370 300, 370 330 L 370 420 Z" fill="#1f1f1f" stroke="#2d2d2d" stroke-width="2" />
+  <!-- Hoodie inner fold with Red Accent -->
+  <path d="M 285 285 L 300 340 L 315 285 Z" fill="#121212" />
+  <path d="M 296 330 L 304 330" stroke="#ef4444" stroke-width="3" stroke-linecap="round" />
+  <path d="M 288 340 L 288 375" stroke="#ef4444" stroke-width="2" stroke-linecap="round" />
+  <path d="M 312 340 L 312 370" stroke="#ef4444" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Neck -->
+  <rect x="285" y="260" width="30" height="30" fill="#d49b78" rx="4" />
+
+  <!-- Head -->
+  <ellipse cx="300" cy="225" rx="36" ry="44" fill="#d49b78" />
+
+  <!-- Hair (Modern sleek dark hair) -->
+  <path d="M 264 220 C 260 185, 290 170, 330 175 C 345 178, 342 195, 340 215 C 335 205, 325 200, 310 200 C 290 200, 275 210, 264 220 Z" fill="#171717" />
+  <path d="M 262 215 C 260 200, 270 185, 290 180" fill="none" stroke="#222" stroke-width="2" />
+
+  <!-- Glasses / Developer specs -->
+  <rect x="274" y="215" width="22" height="15" rx="3" fill="none" stroke="#ef4444" stroke-width="2.5" />
+  <rect x="304" y="215" width="22" height="15" rx="3" fill="none" stroke="#ef4444" stroke-width="2.5" />
+  <line x1="296" y1="222" x2="304" y2="222" stroke="#ef4444" stroke-width="2.5" />
+
+  <!-- Modern Headphones -->
+  <path d="M 258 225 C 255 180, 345 180, 342 225" fill="none" stroke="#ef4444" stroke-width="5" stroke-linecap="round" />
+  <rect x="254" y="215" width="10" height="24" rx="5" fill="#ef4444" />
+  <rect x="336" y="215" width="10" height="24" rx="5" fill="#ef4444" />
+
+  <!-- Developer Laptop -->
+  <!-- Screen Back & Lid -->
+  <polygon points="220,380 380,380 360,290 240,290" fill="url(#laptopGrad)" stroke="#3a3a3a" stroke-width="2" />
+  <!-- Screen Bezel Display -->
+  <polygon points="226,375 374,375 356,295 244,295" fill="#0d1117" />
+  <!-- Glowing Code on Screen -->
+  <line x1="255" y1="310" x2="310" y2="310" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="265" y1="322" x2="340" y2="322" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+  <line x1="265" y1="334" x2="320" y2="334" stroke="#4ade80" stroke-width="2" stroke-linecap="round" />
+  <line x1="255" y1="346" x2="295" y2="346" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" />
+  <line x1="265" y1="358" x2="335" y2="358" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Laptop Base -->
+  <polygon points="195,385 405,385 385,380 215,380" fill="#333333" />
+  <rect x="270" y="381" width="60" height="3" rx="1.5" fill="#555" />
+
+  <!-- Floating Coffee Mug -->
+  <rect x="150" y="348" width="22" height="32" rx="4" fill="#262626" stroke="#333" stroke-width="1.5" />
+  <path d="M 172 355 C 180 355, 180 370, 172 370" fill="none" stroke="#333" stroke-width="2" />
+  <text x="154" y="370" fill="#ef4444" font-size="10" font-weight="bold">&lt;/&gt;</text>
+  <!-- Steam -->
+  <path d="M 157 342 Q 160 335, 158 330" fill="none" stroke="#ffffff" opacity="0.3" stroke-width="1.5" stroke-linecap="round" />
+  <path d="M 164 340 Q 162 333, 165 328" fill="none" stroke="#ffffff" opacity="0.3" stroke-width="1.5" stroke-linecap="round" />
+</svg>

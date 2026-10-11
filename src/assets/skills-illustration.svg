@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="techGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#161616" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <rect width="500" height="500" rx="24" fill="#1b1b1b" stroke="#262626" stroke-width="2" />
+  <circle cx="250" cy="250" r="180" fill="url(#techGlow)" />
+
+  <!-- Connection lines -->
+  <line x1="250" y1="250" x2="140" y2="150" stroke="url(#lineGrad)" stroke-width="2" stroke-dasharray="4 4" />
+  <line x1="250" y1="250" x2="360" y2="150" stroke="url(#lineGrad)" stroke-width="2" stroke-dasharray="4 4" />
+  <line x1="250" y1="250" x2="110" y2="280" stroke="url(#lineGrad)" stroke-width="2" stroke-dasharray="4 4" />
+  <line x1="250" y1="250" x2="390" y2="280" stroke="url(#lineGrad)" stroke-width="2" stroke-dasharray="4 4" />
+  <line x1="250" y1="250" x2="180" y2="390" stroke="url(#lineGrad)" stroke-width="2" stroke-dasharray="4 4" />
+  <line x1="250" y1="250" x2="320" y2="390" stroke="url(#lineGrad)" stroke-width="2" stroke-dasharray="4 4" />
+
+  <!-- Central Core Node -->
+  <circle cx="250" cy="250" r="48" fill="#161616" stroke="#ef4444" stroke-width="3" />
+  <text x="250" y="246" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="14" font-weight="bold">CORE</text>
+  <text x="250" y="265" text-anchor="middle" fill="#ef4444" font-family="monospace" font-size="11">STACK</text>
+
+  <!-- Node 1: Frontend (React / Next.js) -->
+  <g transform="translate(140, 150)">
+    <circle cx="0" cy="0" r="32" fill="#222" stroke="#61dafb" stroke-width="2" />
+    <text x="0" y="5" text-anchor="middle" fill="#61dafb" font-family="sans-serif" font-size="11" font-weight="bold">React</text>
+  </g>
+
+  <!-- Node 2: Backend (Node / Go) -->
+  <g transform="translate(360, 150)">
+    <circle cx="0" cy="0" r="32" fill="#222" stroke="#22c55e" stroke-width="2" />
+    <text x="0" y="5" text-anchor="middle" fill="#22c55e" font-family="sans-serif" font-size="11" font-weight="bold">Node.js</text>
+  </g>
+
+  <!-- Node 3: Cloud & Docker -->
+  <g transform="translate(110, 280)">
+    <circle cx="0" cy="0" r="30" fill="#222" stroke="#3b82f6" stroke-width="2" />
+    <text x="0" y="5" text-anchor="middle" fill="#3b82f6" font-family="sans-serif" font-size="10" font-weight="bold">Docker</text>
+  </g>
+
+  <!-- Node 4: Databases -->
+  <g transform="translate(390, 280)">
+    <circle cx="0" cy="0" r="30" fill="#222" stroke="#eab308" stroke-width="2" />
+    <text x="0" y="5" text-anchor="middle" fill="#eab308" font-family="sans-serif" font-size="10" font-weight="bold">SQL / DB</text>
+  </g>
+
+  <!-- Node 5: Modern UI (Tailwind) -->
+  <g transform="translate(180, 390)">
+    <circle cx="0" cy="0" r="28" fill="#222" stroke="#06b6d4" stroke-width="2" />
+    <text x="0" y="4" text-anchor="middle" fill="#06b6d4" font-family="sans-serif" font-size="10" font-weight="bold">Tailwind</text>
+  </g>
+
+  <!-- Node 6: Cloudflare / Edge -->
+  <g transform="translate(320, 390)">
+    <circle cx="0" cy="0" r="28" fill="#222" stroke="#f97316" stroke-width="2" />
+    <text x="0" y="4" text-anchor="middle" fill="#f97316" font-family="sans-serif" font-size="10" font-weight="bold">Edge API</text>
+  </g>
+</svg>
