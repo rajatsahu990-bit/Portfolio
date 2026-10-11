@@ -3,7 +3,7 @@ export const profileData = {
   role: "B.Tech CS(IT) Student & Aspiring Software Developer",
   college: "GL Bajaj Institute of Technology and Management",
   year: "2nd Year B.Tech CS(IT) (Pass out: 2029)",
-  tagline: "I learn. I buidl. I ship.",
+  tagline: "I learn. I build. I ship.",
   bioShort: "2nd Year B.Tech CS(IT) student at GL Bajaj Institute of Technology and Management. Passionate about software development, web technologies, and continuous learning.",
   email: "rajatsahu990@gmail.com",
   phone: "+91-6388941510",
