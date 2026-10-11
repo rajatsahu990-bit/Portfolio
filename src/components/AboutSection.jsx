@@ -80,7 +80,7 @@ export default function AboutSection({ onNavigate }) {
                   </span>
                 </div>
                 <p className="text-neutral-400 font-mono mt-1 text-xs">
-                  Bright School
+                  Brightland School
                 </p>
               </div>
             </div>
