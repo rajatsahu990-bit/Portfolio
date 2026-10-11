@@ -139,7 +139,7 @@ export default function ResumeModal({ isOpen, onClose }) {
                       High School (Class X)
                     </h3>
                     <p className="text-neutral-600 text-xs font-medium">
-                      Bright School
+                      Brightland School
                     </p>
                   </div>
                   <span className="font-mono text-xs font-semibold text-neutral-800 bg-neutral-100 px-2 py-0.5 rounded whitespace-nowrap">
